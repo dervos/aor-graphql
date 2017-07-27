@@ -1,4 +1,4 @@
-import { put, takeEvery } from 'redux-saga/effects';
+import { all, put, takeEvery } from 'redux-saga/effects';
 import { push } from 'react-router-redux';
 import { showNotification } from 'admin-on-rest';
 import {
@@ -9,7 +9,7 @@ import {
 } from './reviewActions';
 
 export default function* reviewSaga() {
-    yield [
+    yield all([
         takeEvery(REVIEW_APPROVE_SUCCESS, function* () {
             yield put(showNotification('resources.Review.notification.approved_success'));
             yield put(push('/Review'));
@@ -26,5 +26,5 @@ export default function* reviewSaga() {
             yield put(showNotification('resources.Review.notification.rejected_error', 'warning'));
             console.error(error);
         }),
-    ];
+    ]);
 }

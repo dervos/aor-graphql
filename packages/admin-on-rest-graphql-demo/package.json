@@ -19,7 +19,7 @@
     "react-scripts": "~0.9.5"
   },
   "dependencies": {
-    "admin-on-rest": "~1.1.0",
+    "admin-on-rest": "~1.2.1",
     "aor-graphql-client-graphcool": "^0.0.1-1",
     "aor-language-french": "~1.8.0",
     "aor-rich-text-input": "~1.0.0",
@@ -31,7 +31,7 @@
     "graphql-tag": "~2.2.2",
     "graphql-tools": "~0.11.0",
     "lodash.upperfirst": "~4.3.1",
-    "material-ui": "~0.16.4",
+    "material-ui": "~0.17.4",
     "pluralize": "~4.0.0",
     "prop-types": "~15.5.7",
     "react": "~15.5.4",
@@ -42,7 +42,7 @@
     "react-router-dom": "~4.1.0",
     "react-tap-event-plugin": "~2.0.1",
     "redux-form": "~6.6.2",
-    "redux-saga": "~0.14.6"
+    "redux-saga": "~0.15.0"
   },
   "scripts": {
     "start": "react-scripts start",
